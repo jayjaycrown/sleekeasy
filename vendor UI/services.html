@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/ca45bd23ce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Hello, world!</title>
+</head>
+
+<body style="background: #F7F7F7;">
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+
+
+    <!-- Page Content Holder -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <ul class="navbar-nav  d-sm-block d-lg-none">
+            <button type="button" class="sidebarCollapse" class="navbar-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </ul>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Sleakeasy logo" srcset="">
+          </a>
+
+          <ul class=" d-none  d-md-none d-lg-block m-0 ms-4">
+            <button type="button" class="sidebarCollapse" class="navbar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </ul>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 align-items-center ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Buyer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hair</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Makover</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nail</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="assets/img/profile.png" class="profileimg" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Switch to Vendor</a></li>
+                  <li><a class="dropdown-item active" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Favorites</a></li>
+                  <li><a class="dropdown-item active" href="#">Refer and get upto N5000</a></li>
+                  <li><a class="dropdown-item" href="#">My Appointments</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-3">
+              <img src="assets/img/headerimg.png" alt="">
+            </div>
+            <div class="col-9">
+              <p>
+
+                <span> Server down for 3hrs
+                  because upgrade check later</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <ul class="list-unstyled components">
+
+          <li>
+            <a href="index.html">Profile</a>
+
+          </li>
+          <li>
+            <a href="#">Appointment</a>
+
+          </li>
+          <li class="active">
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="#">Messages</a>
+          </li>
+          <li>
+            <a href="#">Finance</a>
+          </li>
+          <li>
+            <a href="#">Orders</a>
+          </li>
+          <li>
+            <a href="#">Promo</a>
+          </li>
+        </ul>
+
+
+      </nav>
+
+      <div class="main">
+        <div class="container my-3">
+          <div class="row m-0 align-items-center justify-content-center text-center">
+            <div class="col-md-4">
+              <div class="noservice">
+                <h4 class="text-secondary">
+                  No Services Added Yet
+                </h4>
+                <br><br>
+                <a href="add_service.html" class="btn btn-primary btn-lg py-3 px-5">
+                  <i class="fa-solid fa-plus"></i> &nbsp;&nbsp;&nbsp; Create New Service
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $('.main').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+
+
+      $('#addaddress').on('click', function () {
+        $('#address').addClass('hide');
+        $('#showAddAddr').removeClass('hide');
+        // $(this).toggleClass('hide');
+      })
+
+      $('#showAddr').on('click', function () {
+        $('#address').removeClass('hide');
+        $('#showAddAddr').toggleClass('hide');
+        // $(this).toggleClass('hide');
+      })
+
+      $('#addnin').on('click', function () {
+        $('#nin').addClass('hide');
+        $('#shownin').removeClass('hide');
+        // $(this).toggleClass('hide');
+      })
+
+      $('#showNINBtn').on('click', function () {
+        $('#nin').removeClass('hide');
+        $('#shownin').toggleClass('hide');
+        // $(this).toggleClass('hide');
+      })
+
+      $('#trigger').on('click', function () {
+        $('#showEdit').addClass('hide');
+        $('#hideEdit').removeClass('hide');
+        // $(this).toggleClass('hide');
+      })
+
+      $('#trigger2').on('click', function () {
+        $('#showEdit').removeClass('hide');
+        $('#hideEdit').toggleClass('hide');
+        // $(this).toggleClass('hide');
+      })
+
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#file1').on('change', function () {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+        if (/^image/.test(files[0].type)) { // only image file
+          var reader = new FileReader(); // instance of the FileReader
+          reader.readAsDataURL(files[0]); // read the local file
+
+          reader.onloadend = function () { // set image data as background of div
+            $('img.default').attr('src', reader.result).removeClass('default')
+          }
+        }
+      })
+    })
+  </script>
+
+</body>
+
+</html>
