@@ -96,6 +96,39 @@ $(document).ready(function () {
 
 
 
+  const ctx2 = document.getElementById('myChart2');
+  const myChart2 = new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ['jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      datasets: [{
+        label: 'Spending History',
+        data: [12, 19, 3, 5, 2, 3, 8, 6, 5, 11, 10, 12],
+        backgroundColor: '#DEA18678',
+        borderColor: '#DEA186',
+        pointBackgroundColor: '#fff',
+        pointBorderColor: '#DEA186',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgba(148,159,177,0.8)',
+        borderWidth: 3,
+        fill: true
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+      plugins: {
+        legend: { display: false },
+
+      }
+
+    },
+
+  });
+
 
 
 

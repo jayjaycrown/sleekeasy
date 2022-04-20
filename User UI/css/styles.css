@@ -1111,8 +1111,8 @@ td.active.active:focus,
 .datepicker table tr td.active:active:focus,
 .datepicker table tr td.active:active:hover {
   color: #fff;
-  background-color: #ad6060 !important;
-  border-color: #ad6060 !important;
+  background-color: #9d5d41 !important;
+  border-color: #9d5d41 !important;
 }
 
 /* .datepicker table tr td.active:active {
@@ -1126,8 +1126,59 @@ td.active.active:focus,
 .datepicker table tr td.active.highlighted:active,
 .datepicker table tr td.active:active {
   color: #fff;
-  background-color: #c74c4d !important;
-  border-color: #c74c4d !important;
+  background-color: #9d5d41 !important;
+  border-color: #9d5d41 !important;
+}
+
+.flatpickr-months {
+  color: #a65a3a !important;
+  background-color: #fff8f5 !important;
+  padding: 20px 0 !important;
+}
+
+.flatpickr-months .flatpickr-month {
+  background: transparent;
+  color: rgb(166, 90, 58) !important;
+  fill: rgba(166, 90, 58, 0.9) !important;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.6638px;
+  line-height: 20px;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  height: 34px;
+  padding: 26px 10px !important;
+  z-index: 3;
+  color: rgb(166, 90, 58) !important;
+  fill: rgba(166, 90, 58, 0.9) !important;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+  background: #a65a3a !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  border-color: #a65a3a !important;
 }
 /* table thead tr:nth-child(2) {
   background: red !important;

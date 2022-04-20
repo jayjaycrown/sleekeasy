@@ -20,6 +20,10 @@
   <!-- <link rel="stylesheet" href="css/slick.css"> -->
   <link rel="stylesheet" href="css/styles.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_red.css"> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
   <link rel="icon" href="assets/img/favicon.png" sizes="32x32" type="image/png">
   <title>Sleakeasy</title>
@@ -80,6 +84,43 @@
       /* Microsoft Edge */
       color: #C74C4D !important;
     }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label.time {
+      /* content: ''; */
+      cursor: pointer;
+      position: relative;
+      font-size: 14.3726px;
+      line-height: 18px;
+      border-radius: 33px;
+      padding: 10px 15px;
+      color: #666666;
+      background: #ffffff !important;
+    }
+
+    input[type="radio"]:checked+label.time {
+      background: #9D5D41 !important;
+      border-radius: 33px;
+      color: #fff !important;
+    }
+
+    .datepicker-inline {
+      width: 100% !important;
+    }
+
+    table {
+
+      width: 100% !important;
+    }
+
+    /* input[type="radio"]::checked+label {
+      background: #9D5D41 !important;
+      border-radius: 33px;
+      color: #fff !important;
+    } */
   </style>
 </head>
 
@@ -508,105 +549,156 @@
         </div>
 
 
-        <div class="col-lg-4 offset-lg-1  sticky-top">
-          <div class="card sidecard">
-            <div class="card-header">
-              <div class="text-end">
-                <p>Level 1</p>
-              </div>
-              <div class="row">
-                <div class="col-lg-4">
-                  <img src="assets/img/sidelogo.png" class="img-fluid" alt="" srcset="">
+        <div class="col-lg-4 offset-lg-1">
+          <form action="">
+            <div class="card sidecard">
+              <div class="card-header">
+                <div class="text-end">
+                  <p>Level 1</p>
                 </div>
-                <div class="col-lg-8">
-                  <h3>Mary's
-                    Signature</h3>
-                  <p>130B Association Road, Dolphin Estate, Lagos (Ikoyi)</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-header">
-              <div class="d-flex justify-content-start align-items-center">
-                <div class="ratings"> <i class="fa fa-star rating-color"></i> <i class="fa fa-star rating-color"></i>
-                  <i class="fa fa-star rating-color"></i> <i class="fa fa-star rating-color"></i> <i
-                    class="fa fa-star"></i> </div>
-                <h5 class="review-count">&nbsp;&nbsp; (456 ratings)</h5>
-              </div>
-            </div>
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-4">
-                  <label for="date">
-                    <h4>Date</h4>
-                  </label>
-                </div>
-                <div class="col-lg-8">
-                  <div class="input-group date">
-                    <input type="text" id="date" readonly class="form-control" placeholder="28/12/21"><span
-                      class="input-group-addon">
-                      <i class="fa fa-calendar mycolor2" aria-hidden="true"></i>
-                    </span>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="assets/img/sidelogo.png" class="img-fluid" alt="" srcset="">
+                  </div>
+                  <div class="col-lg-8">
+                    <h3>Mary's
+                      Signature</h3>
+                    <p>130B Association Road, Dolphin Estate, Lagos (Ikoyi)</p>
                   </div>
                 </div>
               </div>
-              <span class="smalltext">Stylist not available kindly pick another date</span>
-              <!-- <div class="d-flex justify-content-start align-items-center m-auto">
-                <div class="test2">
-                  <h4>Date</h4>
+
+              <div class="card-header">
+                <div class="d-flex justify-content-start align-items-center">
+                  <div class="ratings"> <i class="fa fa-star rating-color"></i> <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i> <i class="fa fa-star rating-color"></i> <i
+                      class="fa fa-star"></i> </div>
+                  <h5 class="review-count">&nbsp;&nbsp; (456 ratings)</h5>
                 </div>
-                <div class="test2">
-                  <form class="row">
-                    <label for="date" class="col-1 col-form-label">Date</label>
-                    <div class="col-5">
-                      <div class="input-group date" id="datepicker">
-                        <input type="text" class="form-control" id="date" />
-                        <span class="input-group-append">
-                          <span class="input-group-text bg-light d-block">
-                            <i class="fa fa-calendar"></i>
-                          </span>
-                        </span>
+              </div>
+              <div class="card-header">
+                <h5>Pick a Date</h5>
+                <div class="row">
+                  <div class="col-md-10 offset-md-1">
+
+                    <br>
+                    <div class="row">
+                      <div class="col-12 text-end">
+                        <input class="flatpickr flatpickr-input" type="hidden" style="display: none;"
+                          placeholder="Select Date.." data-id="altinput">
                       </div>
                     </div>
-                  </form>
-                </div>
 
-              </div> -->
-            </div>
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-4">
-                  <label for="date">
-                    <h4>Time</h4>
-                  </label>
-                </div>
-                <div class="col-lg-8">
-                  <div class="input-group mb-3">
-
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Select Time</option>
-                      <option value="1">Morning</option>
-                      <option value="2">Afternoon</option>
-                      <option value="3">Evening</option>
-                    </select>
                   </div>
-                  <!-- <div class="input-group"> -->
-                  <!-- <input class="form-control" type="text" id="datetime" /> -->
 
-                  <!-- <div id="timePicker"></div> -->
-
-
-                  <!-- </div> -->
                 </div>
-              </div>
 
+              </div>
+              <div class="card-header">
+                <div class="row">
+                  <h5>Select Time</h5>
+                  <div class="my-3">
+                    <span>
+                      <input type="radio" name="time" id="8">
+                      <label class="time" for="8">08:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="9" checked>
+                      <label class="time" for="9">09:00
+
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="10">
+                      <label class="time" for="10">10:00
+
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="11">
+                      <label class="time" for="11">11:00
+
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="12">
+                      <label class="time" for="12">12:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="13">
+                      <label class="time" for="13">13:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="14">
+                      <label class="time" for="14">14:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="15">
+                      <label class="time" for="15">15:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="16">
+                      <label class="time" for="16">16:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="17">
+                      <label class="time" for="17">17:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="18">
+                      <label class="time" for="18">18:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="19">
+                      <label class="time" for="19">19:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="20">
+                      <label class="time" for="20">20:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="21">
+                      <label class="time" for="21">21:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="22">
+                      <label class="time" for="22">22:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="23">
+                      <label class="time" for="23">23:00
+                      </label>
+                    </span>
+                    <span>
+                      <input type="radio" name="time" id="00">
+                      <label class="time" for="00">00:00
+                      </label>
+                    </span>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
-          </div>
-          <button class="btn btn-sidecard disabled">Book Now</button>
-          <button class="btn btn-sidecard-outline"> <span><i class="fa fa-commenting mycolor2" aria-hidden="true"></i>
-            </span>&nbsp;&nbsp;&nbsp;
-            Message Stylist</button>
+            <button class="btn btn-sidecard disabled">Book Now</button>
+            <button class="btn btn-sidecard-outline"> <span><i class="fa fa-commenting mycolor2" aria-hidden="true"></i>
+              </span>&nbsp;&nbsp;&nbsp;
+              Message Stylist</button>
+          </form>
         </div>
+
       </div>
     </div>
 
@@ -1002,13 +1094,13 @@
   <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://nilavpatel.github.io/jquery-time-picker/jquery-time-picker.js"></script>
 
   <!-- <script src="js/slick.min.js"></script> -->
   <script src="assets/slick-1.8.1/slick/slick.min.js"></script>
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js">
   </script> -->
   <script src="assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <!-- <script
     src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
   </script> -->
@@ -1021,24 +1113,31 @@
     //   autoclose: true,
     // });
 
-    $('.input-group.date').datepicker({
-      autoclose: true,
-      startDate: '1d',
-      clearBtn: true,
-      todayBtn: "linked",
-      todayHighlight: true,
-      toggleActive: true,
+    // $('.input-group.date').datepicker({
+    //   autoclose: true,
+    //   startDate: '1d',
+    //   clearBtn: true,
+    //   todayBtn: "linked",
+    //   todayHighlight: true,
+    //   toggleActive: true,
 
-      // datesDisabled: ['01/06/2022', '01/21/2022']
+    //   // datesDisabled: ['01/06/2022', '01/21/2022']
+    // });
+    $('#datepicker').datepicker();
+    $('#datepicker').on('changeDate', function () {
+      $('#my_hidden_input').val(
+        $('#datepicker').datepicker('getFormattedDate')
+      );
     });
   </script>
+
   <script>
-    $(function () {
-      $("#timePicker").timepicker();
-      // get the value of the picker
-      // $("#timePicker").timepicker().getValue();
+    $(".flatpickr").flatpickr({
+      inline: true,
+      dateFormat: "Y-m-d"
     });
   </script>
+
 
 </body>
 

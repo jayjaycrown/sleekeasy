@@ -24,6 +24,7 @@
   src: url(../assets/fonts/BreatheNeue/BreatheNeue.ttf);
   font-family: "Breathe Neue";
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background: #f7f7f7;
@@ -501,6 +502,9 @@ a.article:hover {
   display: none;
 }
 
+.card-header {
+  background: #f8f8f8 !important;
+}
 /* img {
   cursor: pointer;
   width: 200px;
@@ -799,6 +803,21 @@ img.default {
   border-bottom: 5px solid #9d5d41 !important;
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #9d5d41;
+  border-radius: 20px;
+}
+
+.nav-pills .nav-link {
+  background: 0 0;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 10px 35px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* navs */
 
 .mynav .nav-link {
@@ -824,6 +843,10 @@ img.default {
   color: #312a28;
   padding-left: 1.2rem;
   border-left: 5px solid #9d5d41;
+}
+
+.table > :not(caption) > * > * {
+  padding: 1rem 1rem !important;
 }
 
 /* .addImg img {
@@ -1127,6 +1150,30 @@ p.wrap {
 }
 .wrapper3 label:hover:before {
   color: #646363 !important;
+}
+.trash {
+  width: 50px;
+  height: 50px;
+  /* line-height: 50px; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: #f3f3f3;
+}
+
+.bankimg img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.form-check-input:checked[type="radio"] {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+}
+.form-check-input[type="radio"] {
+  border-radius: 0.25em;
+  border: 1px solid rgba(0, 0, 0, 0.25);
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
