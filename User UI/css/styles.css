@@ -67,6 +67,17 @@ h5,
 h6 {
   font-family: "Claspo ND";
 }
+
+h4.mat {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.1913px;
+  line-height: 94.73%;
+  /* or 21px */
+
+  color: #312a28;
+}
 p {
   font-family: "Circular Std";
 }
@@ -1370,8 +1381,14 @@ td.active.active:focus,
   width: auto !important;
   background: #ffffff;
   box-shadow: 0px 13.8696px 27.7391px rgba(0, 0, 0, 0.05);
-  border-radius: 0px;
-  border-bottom: 1px solid #e5e5e5 !important;
+  border-radius: 9.24638px;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.card-body2 {
+  flex: 1 1 auto;
+  padding: 1rem 2rem;
 }
 
 .accordion-item:last-of-type {
@@ -1960,11 +1977,23 @@ label {
 
 textarea {
   width: 100%;
-  border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 40px 50px;
+  /* border-radius: 20px; */
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  padding: 20px 30px;
 }
 
+.form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.form-check-input[type="radio"] {
+  border-radius: 0.25em;
+  border: 1px solid #9d5d41;
+}
+.form-check-input:checked[type="radio"] {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+}
 .mymodalText {
   font-family: "Claspo ND";
   font-style: normal;
