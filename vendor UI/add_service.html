@@ -145,6 +145,8 @@
 
       </nav>
 
+
+
       <div class="main">
         <div class="container py-4 px-4">
           <div class="row">
@@ -157,21 +159,21 @@
                       <ul class="nav mynav flex-column">
 
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link active" role="tab" aria-controls="overview" aria-selected="false"
-                            aria-current="page" data-bs-toggle="tab" id="overview-tab" disabled>Overview</a>
-
+                          <a class="nav-link active" role="tab" aria-controls="overview" aria-selected="true"
+                            aria-current="page" href="#overview" data-bs-toggle="tab" id="overview-tab"
+                            disabled>Overview</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" data-bs-toggle="tab" id="about-tab" role="tab" aria-controls="about"
-                            aria-selected="false" disabled>About Service</a>
+                          <a class="nav-link" href="#about" data-bs-toggle="tab" id="about-tab" role="tab"
+                            aria-controls="about" aria-selected="false" disabled>About Service</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" data-bs-toggle="tab" id="gallery-tab" role="tab" aria-controls="gallery"
-                            aria-selected="false" disabled>Gallery</a>
+                          <a class="nav-link" href="#gallery" data-bs-toggle="tab" id="gallery-tab" role="tab"
+                            aria-controls="gallery" aria-selected="false" disabled>Gallery</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" data-bs-toggle="tab" id="pricing-tab" role="tab" aria-controls="pricing"
-                            aria-selected="false" disabled>Pricing</a>
+                          <a class="nav-link" href="#pricing" data-bs-toggle="tab" id="pricing-tab" role="tab"
+                            aria-controls="pricing" aria-selected="false" disabled>Pricing</a>
                         </li>
                       </ul>
                     </div>
@@ -180,89 +182,108 @@
                         <div class="tab-content">
                           <div class="tab-pane active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
                             <div class="row">
-                              <div class="col-md-6">
-                                <div class="form-group mb-3">
-                                  <label for="">Title of Service</label>
-                                  <input type="text" class="form-control form-control3" required>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group mb-3">
-                                      <label for="">Category</label>
-                                      <select name="" id="" required class="form-control form-control3">
-                                        <option value="">1</option>
-                                      </select>
-                                      <!-- <input type="text" class="form-control form-control3"> -->
+                              <div class="col-12">
+                                <div class="setwidth">
+                                  <div class="form-group mb-3">
+                                    <label for="">Title of Service</label>
+                                    <input type="text" class="form-control form-control3" required>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group mb-3">
+                                        <label for="">Category</label>
+                                        <select name="" id="" required class="form-select">
+                                          <option value="">1</option>
+                                        </select>
+                                        <!-- <input type="text" class="form-control form-control3"> -->
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group mb-3">
+                                        <label for="">Sub Category</label>
+                                        <select name="" id="" required class="form-select">
+                                          <option value="">1</option>
+                                        </select>
+                                        <!-- <input type="text" class="form-control form-control3"> -->
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group mb-3">
-                                      <label for="">Sub Category</label>
-                                      <select name="" id="" required class="form-control form-control3">
-                                        <option value="">1</option>
-                                      </select>
-                                      <!-- <input type="text" class="form-control form-control3"> -->
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group mb-3">
+                                        <label for="">Gender</label>
+                                        <select name="" required id="" class="form-select">
+                                          <option value="">Male</option>
+                                          <option value="">Female</option>
+                                          <option value="">Both</option>
+                                        </select>
+                                        <!-- <input type="text" class="form-control form-control3"> -->
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group mb-3">
+                                        <label for="">Duratiom</label>
+                                        <select name="" required id="" class="form-select">
+                                          <option value="">30 Minutes</option>
+                                          <option value="">1 hr</option>
+                                          <option value="">2 hrs</option>
+                                        </select>
+                                        <!-- <input type="text" class="form-control form-control3"> -->
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group mb-3">
-                                      <label for="">Gender</label>
-                                      <select name="" required id="" class="form-control form-control3">
-                                        <option value="">Male</option>
-                                        <option value="">Female</option>
-                                        <option value="">Both</option>
-                                      </select>
-                                      <!-- <input type="text" class="form-control form-control3"> -->
-                                    </div>
+                                  <div class="form-group mb-3">
+                                    <label for="">Add Tags</label>
+                                    <input required name='tags' id="tag1" value='PHP,Laravel'
+                                      class="form-control form-control3" autofocus>
                                   </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group mb-3">
-                                      <label for="">Duratiom</label>
-                                      <select name="" required id="" class="form-control form-control3">
-                                        <option value="">30 Minutes</option>
-                                        <option value="">1 hr</option>
-                                        <option value="">2 hrs</option>
-                                      </select>
-                                      <!-- <input type="text" class="form-control form-control3"> -->
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                  <label for="">Add Tags</label>
-                                  <input required name='tags' id="tag1" value='PHP,Laravel'
-                                    class="form-control form-control3" autofocus>
-                                </div>
 
-                                <div class="text-center">
+
+                                </div>
+                                <div class="text-end">
                                   <a class="btn btn-primary" onclick="change_tab('about')">Next</a>
                                 </div>
                               </div>
-                              <div class="col-md-6"></div>
+
+
                             </div>
 
 
                           </div>
                           <div class="tab-pane" id="about" role="tabpanel" aria-labelledby="about-tab">
-                            <div class="row">
+                            <div class="row mb-5">
                               <div class="col-md-6">
                                 <div class="form-group mb-3">
                                   <label for="">About Services</label>
                                   <textarea required name="" maxlength="2000" class="form-control form-control3" id=""
                                     rows="10"></textarea>
                                 </div>
+                                <div class="row">
+                                  <div class="col-md-8">
+                                    <label for="">Add Materials</label>
+                                    <input type="text" class="form-control form-control3" required>
+                                    <!-- <input name='tag2' id="tag2" value='PHP,test' class="form-control form-control3"
+                                    autofocus> -->
+                                  </div>
+                                  <div class="col-md-4">
+                                    <label for="">Price (N)</label>
+                                    <input type="text" class="form-control form-control3" required>
+                                    <!-- <input name='tag2' id="tag2" value='PHP,test' class="form-control form-control3"
+                                    autofocus> -->
+                                  </div>
+                                  <div class="col-12 mt-3">
+                                    <button class="btn btn-block btn-primary">Add a Material</button>
+                                  </div>
+                                </div>
                                 <div class="form-group mb-3">
-                                  <label for="">Add Materials</label>
-                                  <input name='tag2' id="tag2" value='PHP,test' class="form-control form-control3"
-                                    autofocus>
+
                                 </div>
                                 <div class="text-center">
-                                  <a class="btn btn-primary" onclick="change_tab('overview')">Back</a>
-                                  <a class="btn btn-primary" onclick="change_tab('gallery')">Next</a>
+
+
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6" style="position: relative;">
                                 <div class="row">
                                   <div class="col-6">
                                     <h4>Tips</h4>
@@ -289,29 +310,49 @@
                                     neque.,fbfbffbfd,thgeufhrghgngj,mghtjtt,gnt
                                   </p>
                                 </div>
+                                <div class="fixbotom">
+                                  <a style="cursor: pointer; font-size: .8rem;" class="me-3"
+                                    onclick="change_tab('overview')">Back</a>
+                                  <a class="btn btn-primary" onclick="change_tab('gallery')">Next</a>
+                                </div>
                               </div>
                             </div>
 
 
                           </div>
                           <div class="tab-pane" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
-                            <div class="row">
+                            <div class="row mb-5">
                               <div class="col-md-6">
                                 <h4>Add Images</h4>
                                 <div class="row">
                                   <div class="col-md-4">
                                     <div class="addImg">
-                                      <img src="assets/img/services/1.png" class="img-fluid" alt="">
+                                      <input type="file" id="file1">
+                                      <label for="file1" class="img-upload ">
+                                        <img
+                                          src="https://cdn2.iconfinder.com/data/icons/eon-device-hardware/32/camera_device-512.png"
+                                          width="20" class="default2 p-4" alt="">
+                                      </label>
                                     </div>
                                   </div>
                                   <div class="col-md-4">
                                     <div class="addImg">
-                                      <img src="assets/img/services/2.png" class="img-fluid" alt="">
+                                      <input type="file" id="file2">
+                                      <label for="file2" class="img-upload ">
+                                        <img
+                                          src="https://cdn2.iconfinder.com/data/icons/eon-device-hardware/32/camera_device-512.png"
+                                          width="20" class="default3 p-4" alt="">
+                                      </label>
                                     </div>
                                   </div>
                                   <div class="col-md-4">
                                     <div class="addImg">
-                                      <img src="assets/img/services/3.png" class="img-fluid" alt="">
+                                      <input type="file" id="file3">
+                                      <label for="file3" class="img-upload ">
+                                        <img
+                                          src="https://cdn2.iconfinder.com/data/icons/eon-device-hardware/32/camera_device-512.png"
+                                          width="20" class="default4 p-4" alt="">
+                                      </label>
                                     </div>
                                   </div>
                                 </div>
@@ -335,12 +376,12 @@
                                   </div>
                                 </div>
                                 <br>
-                                <div class="text-center">
+                                <!-- <div class="text-center">
                                   <a class="btn btn-primary" onclick="change_tab('about')">Back</a>
                                   <a class="btn btn-primary" onclick="change_tab('pricing')">Next</a>
-                                </div>
+                                </div> -->
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6" style="position: relative;">
                                 <h4>Tips</h4>
                                 <div class="tips">
                                   <p>
@@ -359,59 +400,72 @@
                                     neque.,fbfbffbfd,thgeufhrghgngj,mghtjtt,gnt
                                   </p>
                                 </div>
+                                <div class="fixbotom">
+                                  <a style="cursor: pointer; font-size: .8rem;" class="me-3"
+                                    onclick="change_tab('about')">Back</a>
+                                  <a class="btn btn-primary" onclick="change_tab('pricing')">Next</a>
+                                </div>
                               </div>
                             </div>
 
                           </div>
                           <div class="tab-pane" id="pricing" role="tabpanel" aria-labelledby="pricing-tab">
                             <div class="row">
-                              <div class="col-md-6">
-                                <div class="form-group mb-3">
-                                  <div class="row">
-                                    <div class="col-6">
-                                      <label for="">Set Price (N)</label>
+                              <div class="col-12">
+                                <div class="setwidth">
+                                  <div class="">
+                                    <div class="form-group mb-3">
+                                      <div class="row">
+                                        <div class="col-6">
+                                          <label for="">Set Price (N)</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                          <a href="" class="text-primary">Promo</a>
+                                        </div>
+                                      </div>
+                                      <input required type="number" placeholder="0.00"
+                                        class="form-control form-control3">
                                     </div>
-                                    <div class="col-6 text-end">
-                                      <a href="" class="text-primary">Promo</a>
+                                    <div class="form-group mb-3">
+                                      <label for="">Recomendations</label>
+                                      <textarea required name="" maxlength="2000" class="form-control form-control3"
+                                        id="" rows="10" placeholder="Type here..."></textarea>
                                     </div>
+                                    <h4>Service Type</h4>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-check">
+                                          <input required class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                          <label class="form-check-label" for="flexRadioDefault1">
+                                            Home Service
+                                          </label>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-check">
+                                          <input required class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                          <label class="form-check-label" for="flexRadioDefault2">
+                                            Saloon
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+
                                   </div>
-                                  <input required type="number" placeholder="0.00" class="form-control form-control3">
                                 </div>
-                                <div class="form-group mb-3">
-                                  <label for="">Recomendations</label>
-                                  <textarea required name="" maxlength="2000" class="form-control form-control3" id=""
-                                    rows="10" placeholder="Type here..."></textarea>
-                                </div>
-                                <h4>Service Type</h4>
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-check">
-                                      <input required class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                      <label class="form-check-label" for="flexRadioDefault1">
-                                        Home Service
-                                      </label>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="form-check">
-                                      <input required class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                      <label class="form-check-label" for="flexRadioDefault2">
-                                        Saloon
-                                      </label>
-                                    </div>
-                                  </div>
-                                </div>
-                                <br>
-                                <div class="text-center">
-                                  <a class="btn btn-primary" onclick="change_tab('gallery')">Back</a>
+                                <div class="text-end">
+                                  <a style="cursor: pointer; font-size: .8rem;" class="me-3"
+                                    onclick="change_tab('gallery')">Back</a>
                                   <a class="btn btn-primary " data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">Submit</a>
 
                                 </div>
                               </div>
-                              <div class="col-mb-6"></div>
+
+
                             </div>
 
 

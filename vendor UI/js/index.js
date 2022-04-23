@@ -54,6 +54,37 @@ $(document).ready(function () {
       reader.onloadend = function () { // set image data as background of div
         $('img.default').attr('src', reader.result).removeClass('default')
       }
+      reader.onloadend = function () { // set image data as background of div
+        $('img.default2').attr('src', reader.result).removeClass('p-4')
+      }
+    }
+  })
+
+  $('#file2').on('change', function () {
+    var files = !!this.files ? this.files : [];
+    if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+    if (/^image/.test(files[0].type)) { // only image file
+      var reader = new FileReader(); // instance of the FileReader
+      reader.readAsDataURL(files[0]); // read the local file
+      reader.onloadend = function () { // set image data as background of div
+        $('img.default3').attr('src', reader.result).removeClass('p-4')
+      }
+    }
+  })
+
+  $('#file3').on('change', function () {
+    var files = !!this.files ? this.files : [];
+    if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+    if (/^image/.test(files[0].type)) { // only image file
+      var reader = new FileReader(); // instance of the FileReader
+      reader.readAsDataURL(files[0]); // read the local file
+
+
+      reader.onloadend = function () { // set image data as background of div
+        $('img.default4').attr('src', reader.result).removeClass('p-4')
+      }
     }
   })
 
