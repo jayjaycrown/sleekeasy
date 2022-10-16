@@ -1,0 +1,76 @@
+.otc {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.otc fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.otc fieldset div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="password"] {
+  width: 35px;
+  line-height: 1;
+  margin: 0.3em;
+  padding: 8px 0 4px;
+  font-size: 16px;
+  text-align: center;
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  border: 1px solid rgba(157, 93, 65, 0.3) !important;
+  color: #212529;
+  border-radius: 4px;
+}
+input[type="password"]:focus {
+  color: #212529;
+  background: #f3f3f3 !important;
+  border: 1px solid rgba(157, 93, 65, 0.888) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0 rgb(157 93 65 / 25%) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 2 group of 3 items */
+/* input[type="number"]:nth-child(n + 4) {
+  order: 2;
+}
+.otc div::before {
+  content: "";
+  height: 2px;
+  width: 24px;
+  margin: 0 0.25em;
+  order: 1;
+  background: #bbbbff;
+} */
+
+.otc label {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* input[type="password" i] {
+  -webkit-text-security: disc !important;
+  padding: 1px 2px;
+} */

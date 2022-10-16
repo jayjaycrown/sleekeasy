@@ -1,0 +1,343 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
+/******************* GLOBAL CLASSES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Circular Std', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: .5px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 45rem 1fr;
+}
+
+.navbar {
+  background: #ffffff;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 3rem 6rem 5rem;
+  gap: 10rem;
+  background: #ffffff;
+}
+
+.sidebar-card {
+  background: #f8f8fb;
+  border: 1px solid #d2d3d5;
+  box-shadow: 0px 13.9218px 27.8436px rgba(0, 0, 0, 0.05);
+  border-radius: 1px;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  gap: 3rem;
+}
+
+.sidebar-title {
+  margin-bottom: 2rem;
+}
+
+.sidebar-title h3 {
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.sidebar-title span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.sidebar-card p {
+  color: #666666;
+}
+
+.sidebar-card-time .divider {
+  height: 2rem;
+  width: 0.2rem;
+  background: #666666;
+  margin: 1.5rem 2rem;
+}
+
+
+/************* INFO  */
+.info {
+  background: #f8f8f8;
+  padding: 6rem 3rem;
+}
+
+.info-container1 {
+  background: #b06d51;
+  color: #ffffff;
+  padding: 4rem 6rem;
+  min-height: 40rem;
+}
+
+.info-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.info-time button {
+  background: #F5ECE8;
+  border-radius: 50rem;
+  padding: 1.2rem 2rem;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 700;
+  column-gap: .7rem;
+}
+
+.info-address {
+  display: flex;
+  column-gap: 3rem;
+  margin-top: 6rem;
+  align-items: flex-start;
+}
+
+.info-address p {
+  font-weight: 300;
+}
+
+.info-address-img {
+  width: fit-content;
+}
+
+.info-address-text {
+  width: 100%;
+  row-gap: 2.5rem;
+}
+
+.info-address-icons {
+  width: fit-content;
+  gap: 1.5rem;
+}
+
+.info-container2 {
+  background: #F5ECE8;
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(-6rem);
+  border-radius: 1rem;
+}
+
+.info-container2-price,
+.info-container2-total {
+  padding: 3rem 5rem;
+}
+
+.info-important {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/************ MWDIA QUERIES */
+@media only screen and (max-width: 1280px) {
+  .nav {
+    padding: 0 4rem;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 35rem 1fr;
+  }
+
+  .sidebar {
+    padding: 6rem 1rem 6rem 3rem;
+    gap: 10rem;
+  }
+
+  .sidebar-card {
+    gap: 2rem;
+  }
+
+  .sidebar-card-time .divider {
+    margin: 1.5rem .5rem;
+  }
+
+  .info-container1 {
+    padding: 4rem 3rem;
+  }
+
+  .info-container2,
+  .info-important {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav .logo {
+    width: 14rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: column;
+    gap: 5rem;
+    /* width: fit-content; */
+  }
+
+  .info-container1 {
+    min-height: 45rem;
+  }
+
+  /* .info-address {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info-address-text{
+    width: 100%;
+    background: red;
+  } */
+  .info-address-icons {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav .logo {
+    width: 14rem;
+  }
+
+  .sidebar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .info-time {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  .info-container2:nth-child(1) {
+    padding: 2rem;
+  }
+
+  .info-address {
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template: "a b"
+      "c c";
+  }
+
+  .info-address-img {
+    grid-area: a;
+  }
+
+  .info-address-text {
+    grid-area: b;
+  }
+
+  .info-address-icons {
+    grid-area: c;
+  }
+
+  .info-address-icons {
+    flex-direction: row;
+    justify-self: center;
+    gap: 6rem;
+  }
+
+  .info {
+    padding: 2rem 1rem;
+  }
+
+  .info-container1 {
+    min-height: 60rem;
+    padding: 4rem 1rem;
+  }
+
+  .info-container2,
+  .info-important {
+    width: 95%;
+  }
+
+  .info-container2-price,
+  .info-container2-total {
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .info-address {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, fit-content);
+    width: 100%;
+    column-gap: 1rem;
+  }
+
+  .info-address-img {
+    display: none;
+  }
+}
+
+
+
+/***************************** HELPER CLASSES */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}

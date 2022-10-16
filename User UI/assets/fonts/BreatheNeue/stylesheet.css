@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Breathe Neue Small';
+    src: url('BreatheNeueSmall.eot');
+    src: local('Breathe Neue Small'), local('BreatheNeueSmall'),
+        url('BreatheNeueSmall.eot?#iefix') format('embedded-opentype'),
+        url('BreatheNeueSmall.woff2') format('woff2'),
+        url('BreatheNeueSmall.woff') format('woff'),
+        url('BreatheNeueSmall.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Breathe Neue';
+    src: url('BreatheNeue-Light.eot');
+    src: local('Breathe Neue Light'), local('BreatheNeue-Light'),
+        url('BreatheNeue-Light.eot?#iefix') format('embedded-opentype'),
+        url('BreatheNeue-Light.woff2') format('woff2'),
+        url('BreatheNeue-Light.woff') format('woff'),
+        url('BreatheNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Breathe Neue Special Solo';
+    src: url('BreatheNeueSpecialSolo.eot');
+    src: local('Breathe Neue Special Solo'), local('BreatheNeueSpecialSolo'),
+        url('BreatheNeueSpecialSolo.eot?#iefix') format('embedded-opentype'),
+        url('BreatheNeueSpecialSolo.woff2') format('woff2'),
+        url('BreatheNeueSpecialSolo.woff') format('woff'),
+        url('BreatheNeueSpecialSolo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Breathe Neue Caps';
+    src: url('BreatheNeueCaps.eot');
+    src: local('Breathe Neue Caps'), local('BreatheNeueCaps'),
+        url('BreatheNeueCaps.eot?#iefix') format('embedded-opentype'),
+        url('BreatheNeueCaps.woff2') format('woff2'),
+        url('BreatheNeueCaps.woff') format('woff'),
+        url('BreatheNeueCaps.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Breathe Neue';
+    src: url('BreatheNeue.eot');
+    src: local('Breathe Neue'), local('BreatheNeue'),
+        url('BreatheNeue.eot?#iefix') format('embedded-opentype'),
+        url('BreatheNeue.woff2') format('woff2'),
+        url('BreatheNeue.woff') format('woff'),
+        url('BreatheNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Breathe Neue Special';
+    src: url('BreatheNeueSpecial.eot');
+    src: local('Breathe Neue Special'), local('BreatheNeueSpecial'),
+        url('BreatheNeueSpecial.eot?#iefix') format('embedded-opentype'),
+        url('BreatheNeueSpecial.woff2') format('woff2'),
+        url('BreatheNeueSpecial.woff') format('woff'),
+        url('BreatheNeueSpecial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
