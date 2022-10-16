@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://kit.fontawesome.com/ca45bd23ce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Add Service</title>
+</head>
+
+<body style="background: #F7F7F7;">
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+
+
+    <!-- Page Content Holder -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <ul class="navbar-nav  d-sm-block d-lg-none">
+            <button type="button" class="sidebarCollapse" class="navbar-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </ul>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Sleakeasy logo" srcset="">
+          </a>
+
+          <ul class=" d-none  d-md-none d-lg-block m-0 ms-4">
+            <button type="button" class="sidebarCollapse" class="navbar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </ul>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 align-items-center ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Buyer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hair</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Makover</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nail</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="assets/img/profile.png" class="profileimg" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Switch to Vendor</a></li>
+                  <li><a class="dropdown-item active" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Favorites</a></li>
+                  <li><a class="dropdown-item active" href="#">Refer and get upto N5000</a></li>
+                  <li><a class="dropdown-item" href="#">My Appointments</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-3">
+              <img src="assets/img/headerimg.png" alt="">
+            </div>
+            <div class="col-9">
+              <p>
+
+                <span> Server down for 3hrs
+                  because upgrade check later</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <ul class="list-unstyled components">
+
+          <li>
+            <a href="index.html">Profile</a>
+
+          </li>
+          <li class="active">
+            <a href="appointments.html">Appointment</a>
+
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="messages.html">Messages</a>
+          </li>
+          <li>
+            <a href="#">Finance</a>
+          </li>
+          <li>
+            <a href="#">Orders</a>
+          </li>
+          <li>
+            <a href="#">Promo</a>
+          </li>
+        </ul>
+
+
+      </nav>
+
+      <div class="main">
+        <div class="container py-4 px-4">
+          <div class="row ">
+            <div class="col-12">
+              <a href="app_details.html"><i class="fa-solid fa-angle-left"></i> Back</a>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-12">
+              <div class=" mt-3">
+                <div class=" my-5">
+                  <div class="row align-items-center ">
+                    <div class="col-md-3  ">
+                      <ul class="nav mynav flex-column d-none">
+
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" role="tab" aria-controls="overview" aria-selected="false"
+                            aria-current="page" data-bs-toggle="tab" id="overview-tab" disabled>Overview</a>
+
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" id="about-tab" role="tab" aria-controls="about"
+                            aria-selected="false" disabled>About Service</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" id="gallery-tab" role="tab" aria-controls="gallery"
+                            aria-selected="false" disabled>Gallery</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" id="pricing-tab" role="tab" aria-controls="pricing"
+                            aria-selected="false" disabled>Pricing</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <form action="">
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="row mb-3">
+                                  <div class="col-6">
+                                    <h5>Upload work</h5>
+                                  </div>
+                                  <div class="col-6 text-end">
+                                    <a href="" style="text-decoration: underline;">Skip</a>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-body px-5 py-4">
+                                    <h4>Add Images</h4>
+                                    <div class="row">
+                                      <div class="col-md-4 mb-3">
+                                        <div class="addImg">
+                                          <img src="assets/img/services/1.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <div class="addImg">
+                                          <img src="assets/img/services/2.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <div class="addImg">
+                                          <img src="assets/img/services/3.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <h4>Add Videos</h4>
+                                    <div class="row">
+                                      <div class="col-md-4 mb-3">
+                                        <div class="addVid">
+                                          <i class="fa-solid fa-video"></i>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <div class="addVid">
+                                          <i class="fa-solid fa-video"></i>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <div class="addVid">
+                                          <i class="fa-solid fa-video"></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                  <div class="col-6">
+                                    <!-- <a>Previous</a> -->
+                                  </div>
+                                  <div class="col-6 text-md-end">
+                                    <a class="btn btn-primary" onclick="change_tab('pricing')">Next</a>
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <!-- <div class="tab-pane" id="about" role="tabpanel" aria-labelledby="about-tab">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                  <label for="">About Services</label>
+                                  <textarea required name="" maxlength="2000" class="form-control form-control3" id=""
+                                    rows="10"></textarea>
+                                </div>
+                                <div class="form-group mb-3">
+                                  <label for="">Add Materials</label>
+                                  <input name='tag2' id="tag2" value='PHP,test' class="form-control form-control3"
+                                    autofocus>
+                                </div>
+                                <div class="text-center">
+                                  <a class="btn btn-primary" onclick="change_tab('overview')">Back</a>
+                                  <a class="btn btn-primary" onclick="change_tab('gallery')">Next</a>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <h4>Tips</h4>
+                                  </div>
+                                  <div class="col-6 text-end">
+                                    <i class="fa-solid fa-lightbulb" style="color: yellow;"></i>
+                                  </div>
+                                </div>
+
+                                <div class="tips">
+                                  <p>
+                                    Lorem ipsum dolor sit amet,consecteturadipiscing elit. Hendrerit turpis
+                                    risuselementumsceleris
+                                  </p>
+                                  <br>
+                                  <p> Vestibulum augueultrices netus amet, sed id lacus, accumsanhendrerit.aculis
+                                    laoreet
+                                    pellentesque
+
+                                  </p>
+                                  <br>
+                                  <p>
+                                    non odio sed ut sed. Vel euismod vel nibhporttitor
+                                    neque.,fbfbffbfd,thgeufhrghgngj,mghtjtt,gnt
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                          <div class="tab-pane" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <h4>Add Images</h4>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <div class="addImg">
+                                      <img src="assets/img/services/1.png" class="img-fluid" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="addImg">
+                                      <img src="assets/img/services/2.png" class="img-fluid" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="addImg">
+                                      <img src="assets/img/services/3.png" class="img-fluid" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <br>
+                                <h4>Add Videos</h4>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <div class="addVid">
+                                      <i class="fa-solid fa-video"></i>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="addVid">
+                                      <i class="fa-solid fa-video"></i>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="addVid">
+                                      <i class="fa-solid fa-video"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                  <a class="btn btn-primary" onclick="change_tab('about')">Back</a>
+                                  <a class="btn btn-primary" onclick="change_tab('pricing')">Next</a>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <h4>Tips</h4>
+                                <div class="tips">
+                                  <p>
+                                    Lorem ipsum dolor sit amet,consecteturadipiscing elit. Hendrerit turpis
+                                    risuselementumsceleris
+                                  </p>
+                                  <br>
+                                  <p> Vestibulum augueultrices netus amet, sed id lacus, accumsanhendrerit.aculis
+                                    laoreet
+                                    pellentesque
+
+                                  </p>
+                                  <br>
+                                  <p>
+                                    non odio sed ut sed. Vel euismod vel nibhporttitor
+                                    neque.,fbfbffbfd,thgeufhrghgngj,mghtjtt,gnt
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div> -->
+                          <div class="tab-pane" id="pricing" role="tabpanel" aria-labelledby="pricing-tab">
+                            <div class="row">
+                              <div class="col-12 mb-3">
+                                <h5>Review and Ratings</h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-body py-4 px-5">
+                                <h5>Write Review</h5>
+                                <div class="my-3">
+                                  <textarea name="" id="" cols="30" rows="10"
+                                    class="form-control form-control3"></textarea>
+                                </div>
+                                <br>
+                                <h5>Ratings</h5>
+                                <div class="prompt">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                      <h5>Promptness</h5>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="wrapper1">
+                                        <input type="checkbox" id="st1" value="1" />
+                                        <label for="st1"></label>
+                                        <input type="checkbox" id="st2" value="2" />
+                                        <label for="st2"></label>
+                                        <input type="checkbox" id="st3" value="3" />
+                                        <label for="st3"></label>
+                                        <input type="checkbox" id="st4" value="4" />
+                                        <label for="st4"></label>
+                                        <input type="checkbox" id="st5" value="5" />
+                                        <label for="st5"></label>
+                                      </div>
+                                    </div>
+                                    <!-- <div class="col-6">
+                                      <div class="ratings small-ratings">
+                                        <i class="fa fa-star rating-color fs-4"></i> <i
+                                          class="fa fa-star rating-color fs-4"></i> <i
+                                          class="fa fa-star rating-color fs-4"></i> <i
+                                          class="fa fa-star rating-color fs-4"></i> <i class="fa fa-star fs-4"></i>
+                                      </div>
+                                    </div> -->
+                                  </div>
+                                </div>
+                                <div class="comm">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                      <h5>Communication</h5>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="wrapper1 wrapper2">
+                                        <input type="checkbox" id="cm1" value="1" />
+                                        <label for="cm1"></label>
+                                        <input type="checkbox" id="cm2" value="2" />
+                                        <label for="cm2"></label>
+                                        <input type="checkbox" id="cm3" value="3" />
+                                        <label for="cm3"></label>
+                                        <input type="checkbox" id="cm4" value="4" />
+                                        <label for="cm4"></label>
+                                        <input type="checkbox" id="cm5" value="5" />
+                                        <label for="cm5"></label>
+                                      </div>
+                                      <!-- <div class="ratings small-ratings">
+                                        <i class="fa fa-star rating-color2 fs-4"></i>
+                                        <i class="fa fa-star rating-color2 fs-4"></i>
+                                        <i class="fa fa-star rating-color2 fs-4"></i>
+                                        <i class="fa fa-star rating-color2 fs-4"></i>
+                                        <i class="fa fa-star fs-4"></i>
+                                      </div> -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="coord ">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                      <h5>Coordination</h5>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="wrapper1 wrapper3">
+                                        <input type="checkbox" id="co1" value="1" />
+                                        <label for="co1"></label>
+                                        <input type="checkbox" id="co2" value="2" />
+                                        <label for="co2"></label>
+                                        <input type="checkbox" id="co3" value="3" />
+                                        <label for="co3"></label>
+                                        <input type="checkbox" id="co4" value="4" />
+                                        <label for="co4"></label>
+                                        <input type="checkbox" id="co5" value="5" />
+                                        <label for="co5"></label>
+                                      </div>
+
+                                      <!-- <div class="ratings small-ratings">
+                                        <i class="fa fa-star rating-color3 fs-4"></i>
+                                        <i class="fa fa-star rating-color3 fs-4"></i>
+                                        <i class="fa fa-star rating-color3 fs-4"></i>
+                                        <i class="fa fa-star rating-color3 fs-4"></i>
+                                        <i class="fa fa-star fs-4"></i>
+                                      </div> -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row my-3">
+                              <div class="col-6">
+                                <a class="btn btn-clear" onclick="change_tab('overview')">
+                                  <i class="fa-solid fa-angle-left"></i> Back</a>
+                              </div>
+                              <div class="col-6 text-md-end">
+                                <a class="btn btn-primary " data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop">Submit</a>
+                              </div>
+                            </div>
+
+                            <div class="text-center">
+
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                    </div>
+                    </form>
+                  </div>
+                  <!-- Nav tabs -->
+
+
+                  <!-- Tab panes -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content" style="background: transparent !important; border: none !important;">
+
+        <div class="modal-body">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center">
+              <a href="all_services.html" data-bs-dismiss="modal">
+                <img src="assets/img/success.png" class="img-fluid" alt="" srcset=""></a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/@yaireo/tagify"></script>
+  <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
+
+  <script src="js/index.js"></script>
+
+  <script>
+    function change_tab(tab_id) {
+
+      $(".nav-link").attr("class", "nav-link"); //clear classes
+      $(".tab-pane").attr("class", "tab-pane fade"); //clear classes
+
+      var tab_content = "#" + tab_id;
+      var taID = "#" + tab_id;
+      var tab = "#" + tab_id + "-tab";
+      $(tab).addClass('active')
+      // $(tab).attr("class", "nav-link active");
+      $(tab_content).attr("class", " tab-pane fade active show");
+
+      $('.mynav > .active').next('li').find('a').trigger('click');
+    }
+  </script>
+  <!-- <script>
+    var input = document.querySelector('input[name=tags]');
+    var input2 = document.querySelector('input[name=tag2]');
+
+    // initialize Tagify on the above input node reference
+    new Tagify(input)
+    new Tagify(input2)
+  </script> -->
+
+
+</body>
+
+</html>

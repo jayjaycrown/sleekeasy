@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/ca45bd23ce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Hello, world!</title>
+</head>
+
+<body style="background: #F7F7F7;">
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+
+
+    <!-- Page Content Holder -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <ul class="navbar-nav  d-sm-block d-lg-none">
+            <button type="button" class="sidebarCollapse" class="navbar-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </ul>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Sleakeasy logo" srcset="">
+          </a>
+
+          <ul class=" d-none  d-md-none d-lg-block m-0 ms-4">
+            <button type="button" class="sidebarCollapse" class="navbar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </ul>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 align-items-center ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Buyer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hair</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Makover</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nail</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="assets/img/profile.png" class="profileimg" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Switch to Vendor</a></li>
+                  <li><a class="dropdown-item active" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Favorites</a></li>
+                  <li><a class="dropdown-item active" href="#">Refer and get upto N5000</a></li>
+                  <li><a class="dropdown-item" href="#">My Appointments</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-3">
+              <img src="assets/img/headerimg.png" alt="">
+            </div>
+            <div class="col-9">
+              <p>
+
+                <span> Server down for 3hrs
+                  because upgrade check later</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <ul class="list-unstyled components">
+
+          <li>
+            <a href="index.html">Profile</a>
+
+          </li>
+          <li>
+            <a href="appointments.html">Appointment</a>
+
+          </li>
+          <li class="active">
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="messages.html">Messages</a>
+          </li>
+          <li>
+            <a href="finance.html">Finance</a>
+          </li>
+          <!-- <li>
+            <a href="#">Orders</a>
+          </li>
+          <li>
+            <a href="#">Promo</a>
+          </li> -->
+        </ul>
+
+
+      </nav>
+
+      <div class="main mb-5">
+        <div class="container my-3">
+          <div class="row mx-4">
+            <div class="col-md-6 text-primary">
+              <a href="all_services.html">Services</a>/ <a href="#">Active</a>/ <a href="#"
+                style="cursor: default;">Million Braids</a>
+            </div>
+            <div class="col-md-6 text-end">
+
+
+              <select class=" form-select myselect" name="" id="">
+                <option>30 Days</option>
+                <option></option>
+                <option></option>
+              </select>
+
+              <button class="btn btn-outline-primary p-2"> <i class="fa-solid fa-pencil"></i> &nbsp; &nbsp;
+                Edit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-0 m-0">
+          <div class="col-12 p-0 m-0">
+            <div class="card border-dark no-radius">
+              <div class="card-body p-4">
+                <span class="sptext"> Million Braids</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row  m-0">
+          <div class="col-12 p-0 m-0">
+            <div class="table-responsive">
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <tr style="height: 50px !important;line-height: 50px;">
+                    <td style="width: 30%; padding-left: 20px;">Services</td>
+                    <td>Status</td>
+                    <td>Impressions</td>
+                    <td>Clicks</td>
+                    <td>Orders</td>
+                    <td>Cancelations</td>
+                  </tr>
+                  <tr class="headerrow">
+                    <td style="width: 30%;padding-left: 20px;">Million Braids</td>
+                    <td>Active</td>
+                    <td>13</td>
+                    <td>298</td>
+                    <td>05</td>
+                    <td>01</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row p-0 m-0">
+          <div class="col-md-8 border-rignt p-0">
+            <div class="container py-3 px-5">
+              <h4>Graph</h4>
+              <div>
+                <canvas id="myChart" width="400" height="150"></canvas>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row p-0 m-0">
+              <div class="col-md-6 border-rignt p-0">
+                <div class="py-3 px-5">
+                  <h4>Rating</h4>
+
+                  <br>
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-6">
+                      <h5 class="mb-0">Cummulative</h5>
+                    </div>
+                    <div class="col-6">
+                      <div class="ratings small-ratings"> <i class="fa fa-star rating-color fs-4"></i> <i
+                          class="fa fa-star rating-color fs-4"></i> <i class="fa fa-star rating-color fs-4"></i> <i
+                          class="fa fa-star rating-color fs-4"></i> <i class="fa fa-star fs-4"></i>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-6">
+                      <h5 class="mb-0">Quality</h5>
+                    </div>
+                    <div class="col-6">
+                      <div class="ratings small-ratings"> <i class="fa fa-star rating-color fs-4"></i> <i
+                          class="fa fa-star rating-color fs-4"></i> <i class="fa fa-star rating-color fs-4"></i> <i
+                          class="fa fa-star fs-4"></i> <i class="fa fa-star fs-4"></i>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-6">
+                      <h5 class="mb-0">Prompt</h5>
+                    </div>
+                    <div class="col-6">
+                      <div class="ratings small-ratings"> <i class="fa fa-star rating-color fs-4"></i> <i
+                          class="fa fa-star rating-color fs-4"></i> <i class="fa fa-star fs-4"></i> <i
+                          class="fa fa-star  fs-4"></i> <i class="fa fa-star fs-4"></i>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="col-md-6">
+                <div class="py-3 px-5">
+                  <h4>Tags</h4>
+                  <span class="badge  bg-white  px-3 py-2 mr-3 text-secondary">#Neat</span>
+                  <span class="badge  bg-white  px-3 py-2 text-secondary">#Fast</span>
+                  <span class="badge  bg-white  px-3 py-2 text-secondary">#Lagos</span>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row my-3 align-items-center">
+              <div class="col-6">
+                <div class=" form-switch">
+
+                  <label class="form-check-label" for="flexSwitchCheckDefault">
+                    <h4>Set order limits per session</h4>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 text-end">
+                <div class=" form-switch">
+
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="py-3 px-3">
+              <h4>Reviews</h4>
+              <br>
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="text-end">
+                    <h4 class="withratings">5 .0<i class="fa fa-star rating-color fs-4"></i></h4>
+                  </div>
+                  <div class="d-flex ">
+                    <div class="imgcard">
+                      <img src="assets/img/services/2.png" alt="" srcset="">
+                    </div>
+                    <div class="d-block ms-4">
+                      <h6>
+                        “You guys were amazing, I absolutely love how i am looking with this gorgeous hairdo. xoxo”
+                      </h6>
+                      <h5 class="text-primary">Ada Njoku</h5>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="text-end">
+                    <h4 class="withratings">5 .0<i class="fa fa-star rating-color fs-4"></i></h4>
+                  </div>
+                  <div class="d-flex ">
+                    <div class="imgcard">
+                      <img src="assets/img/services/2.png" alt="" srcset="">
+                    </div>
+                    <div class="d-block ms-4">
+                      <h6>
+                        “You guys were amazing, I absolutely love how i am looking with this gorgeous hairdo. xoxo”
+                      </h6>
+                      <h5 class="text-primary">Ada Njoku</h5>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="text-end">
+                    <h4 class="withratings">5 .0<i class="fa fa-star rating-color fs-4"></i></h4>
+                  </div>
+                  <div class="d-flex ">
+                    <div class="imgcard">
+                      <img src="assets/img/services/2.png" alt="" srcset="">
+                    </div>
+                    <div class="d-block ms-4">
+                      <h6>
+                        “You guys were amazing, I absolutely love how i am looking with this gorgeous hairdo. xoxo”
+                      </h6>
+                      <h5 class="text-primary">Ada Njoku</h5>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/helpers.esm.min.js"></script> -->
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

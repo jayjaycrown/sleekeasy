@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/ca45bd23ce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/overlay.css"> -->
+  <title>Hello, world!</title>
+</head>
+
+<body style="background: #F7F7F7;">
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+
+
+    <!-- Page Content Holder -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <ul class="navbar-nav  d-sm-block d-lg-none">
+            <button type="button" class="sidebarCollapse" class="navbar-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </ul>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Sleakeasy logo" srcset="">
+          </a>
+
+          <ul class=" d-none  d-md-none d-lg-block m-0 ms-4">
+            <button type="button" class="sidebarCollapse" class="navbar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </ul>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 align-items-center ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Buyer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hair</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Makover</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nail</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="assets/img/profile.png" class="profileimg" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Switch to Vendor</a></li>
+                  <li><a class="dropdown-item active" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Favorites</a></li>
+                  <li><a class="dropdown-item active" href="#">Refer and get upto N5000</a></li>
+                  <li><a class="dropdown-item" href="#">My Appointments</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-3">
+              <img src="assets/img/headerimg.png" alt="">
+            </div>
+            <div class="col-9">
+              <p>
+
+                <span> Server down for 3hrs
+                  because upgrade check later</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <ul class="list-unstyled components">
+
+          <li>
+            <a href="index.html">Profile</a>
+
+          </li>
+          <li>
+            <a href="#">Appointment</a>
+
+          </li>
+          <li class="active">
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="messages.html">Messages</a>
+          </li>
+          <li>
+            <a href="#">Finance</a>
+          </li>
+          <li>
+            <a href="#">Orders</a>
+          </li>
+          <li>
+            <a href="#">Promo</a>
+          </li>
+        </ul>
+
+
+      </nav>
+
+      <div class="main">
+        <div class="container my-3">
+          <div class="row p-3">
+            <div class="col-8">
+              <h2>Services</h2>
+            </div>
+            <div class="col-4 text-end">
+              <a class="btn btn-lg btn-primary py-3 px-5" href="add_service.html"><i
+                  class="fa-regular fa-square-plus"></i> &nbsp;
+                &nbsp;
+                Create New
+                Service</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="card myhead">
+                <div class="card-header">
+                  <div class="row align-items-center">
+                    <div class="col-8">
+                      <div class=" nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                          aria-selected="true">Active</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                          type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Pending</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                          type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Paused</button>
+                        <button class="nav-link" id="nav-draft-tab" data-bs-toggle="tab" data-bs-target="#nav-draft"
+                          type="button" role="tab" aria-controls="nav-draft" aria-selected="false">Draft</button>
+                      </div>
+                    </div>
+                    <div class="col-4 text-end">
+                      <button class="btn btn-clear text-primary">Select</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <br>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <div class="row">
+                        <div class="col-md-3 mb-3">
+                          <div class="card border border-dark p-0" style="position: relative;">
+                            <img class="card-img-top content-image" src="assets/img/services/1.png">
+                            <div class="cardselect">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+
+                              </div>
+                            </div>
+                            <div class="card-body ps-3">
+                              <a href="service_single.html">
+                                <h4>Million Braids </h4>
+                                <h5 class="text-primary">N7,500</h5>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 mr-3 text-secondary">#Neat</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Fast</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Lagos</span>
+                              </a>
+                              <div class="carddetails">
+                                <div class="btn-group dropup">
+                                  <button type="button" class="btn btn-clear btn-sm dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end" style="max-width: 100px !important;">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Pause</a></li>
+                                    <li><a class="dropdown-item" href="#">Stats</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <div class="card border border-dark p-0" style="position: relative;">
+                            <img class="card-img-top content-image" src="assets/img/services/1.png">
+                            <div class="cardselect">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+
+                              </div>
+                            </div>
+                            <div class="card-body ps-3">
+                              <a href="service_single.html">
+                                <h4>Million Braids </h4>
+                                <h5 class="text-primary">N7,500</h5>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 mr-3 text-secondary">#Neat</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Fast</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Lagos</span>
+                              </a>
+                              <div class="carddetails">
+                                <div class="btn-group dropup">
+                                  <button type="button" class="btn btn-clear btn-sm dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end" style="max-width: 100px !important;">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Pause</a></li>
+                                    <li><a class="dropdown-item" href="#">Stats</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <div class="card border border-dark p-0" style="position: relative;">
+                            <img class="card-img-top content-image" src="assets/img/services/1.png">
+                            <div class="cardselect">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+
+                              </div>
+                            </div>
+                            <div class="card-body ps-3">
+                              <a href="service_single.html">
+                                <h4>Million Braids </h4>
+                                <h5 class="text-primary">N7,500</h5>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 mr-3 text-secondary">#Neat</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Fast</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Lagos</span>
+                              </a>
+                              <div class="carddetails">
+                                <div class="btn-group dropup">
+                                  <button type="button" class="btn btn-clear btn-sm dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end" style="max-width: 100px !important;">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Pause</a></li>
+                                    <li><a class="dropdown-item" href="#">Stats</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="col-md-3 mb-3">
+                          <a href="">
+                            <div class="card upgrade-card">
+                              <div class="card-body text-center">
+                                <div class="d-block">
+                                  <div class="upgradeimg">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                  </div>
+                                  <h4>Upgrade to Pro</h4>
+                                  <p>Add unlimited services to your service list</p>
+                                </div>
+
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      <div class="row">
+                        <div class="col-md-3 mb-3">
+                          <div class="card border border-dark p-0" style="position: relative;">
+                            <img class="card-img-top content-image" src="assets/img/services/1.png">
+                            <div class="cardselect">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+
+                              </div>
+                            </div>
+                            <div class="card-body ps-3">
+                              <a href="service_single.html">
+                                <h4>Million Braids </h4>
+                                <h5 class="text-primary">N7,500</h5>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 mr-3 text-secondary">#Neat</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Fast</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Lagos</span>
+                              </a>
+                              <div class="carddetails">
+                                <div class="btn-group dropup">
+                                  <button type="button" class="btn btn-clear btn-sm dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end" style="max-width: 100px !important;">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Pause</a></li>
+                                    <li><a class="dropdown-item" href="#">Stats</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                      <div class="row">
+                        <div class="col-md-3 mb-3">
+                          <div class="card border border-dark p-0" style="position: relative;">
+                            <img class="card-img-top content-image" src="assets/img/services/1.png">
+                            <div class="cardselect">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+
+                              </div>
+                            </div>
+                            <div class="card-body ps-3">
+                              <a href="service_single.html">
+                                <h4>Million Braids </h4>
+                                <h5 class="text-primary">N7,500</h5>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 mr-3 text-secondary">#Neat</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Fast</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Lagos</span>
+                              </a>
+                              <div class="carddetails">
+                                <div class="btn-group dropup">
+                                  <button type="button" class="btn btn-clear btn-sm dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end" style="max-width: 100px !important;">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Pause</a></li>
+                                    <li><a class="dropdown-item" href="#">Stats</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-draft" role="tabpanel" aria-labelledby="nav-draft-tab">
+                      <div class="row">
+                        <div class="col-md-3 mb-3">
+                          <div class="card border border-dark p-0" style="position: relative;">
+                            <img class="card-img-top content-image" src="assets/img/services/1.png">
+                            <div class="cardselect">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+
+                              </div>
+                            </div>
+                            <div class="card-body ps-3">
+                              <a href="service_single.html">
+                                <h4>Million Braids </h4>
+                                <h5 class="text-primary">N7,500</h5>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 mr-3 text-secondary">#Neat</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Fast</span>
+                                <span
+                                  class="badge rounded-pill bg-light text-dark px-3 py-2 text-secondary">#Lagos</span>
+                              </a>
+                              <div class="carddetails">
+                                <div class="btn-group dropup">
+                                  <button type="button" class="btn btn-clear btn-sm dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end" style="max-width: 100px !important;">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Pause</a></li>
+                                    <li><a class="dropdown-item" href="#">Stats</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row m-0 align-items-center justify-content-center text-center">
+            <div class="col-md-4">
+              <div class="noservice">
+                <h4 class="text-secondary">
+                  No Services Added Yet
+                </h4>
+                <br><br>
+                <a href="add_service.html" class="btn btn-primary btn-lg py-3 px-5">
+                  <i class="fa-solid fa-plus"></i> &nbsp;&nbsp;&nbsp; Create New Service
+                </a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+  </div> -->
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
