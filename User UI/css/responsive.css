@@ -36,7 +36,11 @@
   }
   .resultcard {
     width: 100% !important;
+    min-height: 15rem;
   }
+  /* .resultcard:hover .under{
+    background-color: red !important;
+  } */
   .mycrd {
     width: 100% !important;
   }
